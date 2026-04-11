@@ -1,23 +1,74 @@
-# Python
+# =========================
+# 🔹 Python
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Virtual environment
+# =========================
+# 🔹 Virtual Environments
+# =========================
 venv/
+env/
+.venv/
+
+# =========================
+# 🔹 Environment Variables
+# =========================
 .env
+.env.*
 
-# Data files
+# =========================
+# 🔹 Data (RAG documents)
+# =========================
 data/
+documents/
+*.pdf
+*.docx
+*.txt
 *.csv
-*.xlsx
 
-# Models
-*.pkl
-*.h5
+# =========================
+# 🔹 Vector DB (VERY IMPORTANT 🔥)
+# =========================
+chroma/
+chroma_db/
+faiss_index/
+*.faiss
 
-# Logs
+# =========================
+# 🔹 Ollama (local models - HUGE files 🚫)
+# =========================
+ollama/
+*.gguf
+*.bin
+
+# =========================
+# 🔹 Logs
+# =========================
+logs/
 *.log
 
-# OS files
+# =========================
+# 🔹 Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# 🔹 IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# 🔹 OS
+# =========================
 .DS_Store
 Thumbs.db
+
+# =========================
+# 🔹 Cache
+# =========================
+.cache/
+tmp/
+temp/
