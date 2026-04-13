@@ -15,8 +15,7 @@ def create_vector_store(chunks):
     # client_settings={"anonymized_telemetry": "False"}
     )
     # if chunks:
-    #     vectorstore.add_documents(chunks)
-    
+    #     vectorstore.add_documents(chunks)   
 
-    vectorstore.persist()
+    # vectorstore.persist()
     return vectorstore
