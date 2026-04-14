@@ -1,7 +1,8 @@
 import streamlit as st
 from backend.loader import load_and_split
 from backend.embeddings import create_vector_store
-from backend.rag_pipeline import ask_question
+# from backend.rag_pipeline import ask_question
+from backend.rag_pipeline import rag_pipeline
 
 st.title("📄 AI Knowledge Assistant (RAG)")
 
@@ -23,7 +24,8 @@ if uploaded_file:
 query = st.text_input("Ask a question from your document")
 
 if query:
-    answer, sources = ask_question(query)
+    answer, sources = rag_pipeline.ask_question(query)
+    # answer, sources = ask_question(query)
 
     st.subheader("Answer:")
     st.write(answer)
